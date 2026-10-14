@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HOUSE Coffee &amp; Desserts</title>
+  <meta name="description" content="Coffee, desserts and a welcoming table. HOUSE Coffee &amp; Desserts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    CONCEPT SITE NOTES
+    - All photographs are stock photos from Unsplash. They are illustrative only and
+      do NOT show the real HOUSE Coffee & Desserts premises or products.
+    - Everything marked PLACEHOLDER must be replaced with verified details before public use.
+    - To swap a photo, change the <img src> only (keep width/height for stable layout).
+  -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="HOUSE Coffee &amp; Desserts, home">
+        <span class="logo-mark">HOUSE</span>
+        <span class="logo-sub">Coffee &amp; Desserts</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#menu">Explore menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Coffee made with care, desserts made to share.</h1>
+        <p class="hero-lead">Pull up a chair for a slow cup, a slice of something sweet, and a table that never rushes you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore menu</a>
+          <a class="btn btn-ghost" href="#contact">Visit us</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <figure class="media hero-main">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80"
+               alt="Bright cafe interior with wooden tables and a coffee counter"
+               width="1400" height="1000" fetchpriority="high">
+        </figure>
+        <figure class="media hero-inset">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+               alt="White cup of coffee on a table"
+               width="600" height="720" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section featured" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="featured-title">Favourites to look forward to</h2>
+          <p>A taste of what a visit could look like. Examples shown for illustration.</p>
+        </div>
+
+        <!-- PLACEHOLDER: sample items, not a verified menu -->
+        <ul class="featured-grid">
+          <li class="card">
+            <figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80" alt="Cappuccino with latte art in a ceramic cup" width="800" height="1000"></figure>
+            <h3>Cappuccino</h3>
+            <p>Espresso, steamed milk and a soft layer of foam.</p>
+          </li>
+          <li class="card card-offset">
+            <figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Iced coffee in a tall glass" width="800" height="1000"></figure>
+            <h3>Iced coffee</h3>
+            <p>Cold, bright and refreshing for warmer afternoons.</p>
+          </li>
+          <li class="card">
+            <figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Slice of rich chocolate cake" width="800" height="1000"></figure>
+            <h3>Chocolate cake</h3>
+            <p>Deep cocoa flavour with a tender crumb.</p>
+          </li>
+          <li class="card card-offset">
+            <figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Golden baked croissants" width="800" height="1000"></figure>
+            <h3>Butter croissant</h3>
+            <p>Flaky and golden, made for dunking in coffee.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container menu-layout">
+        <div class="menu-panel-wrap">
+          <div class="section-head">
+            <h2 id="menu-title">The menu</h2>
+            <p class="menu-note">Sample items and prices, shown to demonstrate the layout.</p>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Menu categories">
+            <button class="tab is-active" role="tab" id="tab-hot" aria-controls="panel-hot" aria-selected="true" data-image="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1000&q=80" data-alt="Hot latte in a cup on a wooden table">Hot Coffee</button>
+            <button class="tab" role="tab" id="tab-cold" aria-controls="panel-cold" aria-selected="false" tabindex="-1" data-image="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=80" data-alt="Iced coffee served in a glass">Cold Coffee</button>
+            <button class="tab" role="tab" id="tab-dessert" aria-controls="panel-dessert" aria-selected="false" tabindex="-1" data-image="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=80" data-alt="Assorted desserts on a table">Desserts</button>
+          </div>
+
+          <!-- PLACEHOLDER: every name and price below is a sample. Replace with the real menu. -->
+          <div class="tab-panel" id="panel-hot" role="tabpanel" aria-labelledby="tab-hot">
+            <ul class="menu-list">
+              <li><div><h3>Espresso</h3><p>Short, concentrated and rich.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Americano</h3><p>Espresso lengthened with hot water.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Cappuccino</h3><p>Equal parts espresso, milk and foam.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Latte</h3><p>Smooth and milky with a gentle coffee note.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Mocha</h3><p>Espresso, chocolate and steamed milk.</p></div><span class="price" data-placeholder>0.00</span></li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="panel-cold" role="tabpanel" aria-labelledby="tab-cold" hidden>
+            <ul class="menu-list">
+              <li><div><h3>Iced latte</h3><p>Espresso and cold milk over ice.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Iced americano</h3><p>Clean, bold and refreshing.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Cold brew</h3><p>Steeped slowly for a mellow finish.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Iced mocha</h3><p>Chocolate, espresso and milk over ice.</p></div><span class="price" data-placeholder>0.00</span></li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="panel-dessert" role="tabpanel" aria-labelledby="tab-dessert" hidden>
+            <ul class="menu-list">
+              <li><div><h3>Chocolate cake</h3><p>A generous slice with a rich finish.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Cheesecake</h3><p>Creamy, with a buttery base.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Butter croissant</h3><p>Flaky layers, baked golden.</p></div><span class="price" data-placeholder>0.00</span></li>
+              <li><div><h3>Cookie</h3><p>Soft in the middle, crisp at the edge.</p></div><span class="price" data-placeholder>0.00</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="media menu-photo">
+          <img id="menu-photo-img" src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1000&q=80" alt="Hot latte in a cup on a wooden table" width="1000" height="1250" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="container story-layout">
+        <figure class="media story-photo">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=80" alt="Cozy cafe with seating and a barista counter" width="1100" height="1300">
+        </figure>
+        <div class="story-copy">
+          <h2 id="story-title">A table for a quiet morning or a long catch-up</h2>
+          <p>HOUSE is about the simple things done well: a good cup of coffee, a dessert that makes you pause, and a room where it feels easy to stay a while.</p>
+          <p>Whether you stop in for a quick espresso or settle in with friends and something sweet, the aim is the same. Warm service, comfortable seats and food and drink worth coming back for.</p>
+          <a class="btn btn-light" href="#contact">Plan your visit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="gallery-title">Gallery</h2>
+          <p>Coffee, dessert and the feel of the room. Stock photography shown for illustration.</p>
+        </div>
+        <ul class="gallery-grid">
+          <li class="g-tall"><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Coffee cup with latte art on a saucer" width="800" height="1100"></figure></li>
+          <li class="g-wide"><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1100&q=80" alt="Friends talking at a cafe table" width="1100" height="700"></figure></li>
+          <li><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80" alt="Dessert topped with fresh berries" width="700" height="700"></figure></li>
+          <li><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" alt="Coffee beans beside a cup of coffee" width="700" height="700"></figure></li>
+          <li class="g-tall"><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=800&q=80" alt="Cafe interior with warm lighting" width="800" height="1100"></figure></li>
+          <li><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?auto=format&fit=crop&w=700&q=80" alt="Layered cake on a plate" width="700" height="700"></figure></li>
+          <li class="g-wide"><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1100&q=80" alt="Cafe seating area with large windows" width="1100" height="700"></figure></li>
+          <li><figure class="media"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80" alt="Cup of coffee on a wooden surface" width="700" height="700"></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <h2 id="contact-title">Visit us</h2>
+          <p>Find us, call ahead or say hello. Details will be added once confirmed.</p>
+
+          <!-- PLACEHOLDER: replace every bracketed value with verified details -->
+          <dl class="details">
+            <div><dt>Address</dt><dd data-placeholder>[Street address, city: to be confirmed]</dd></div>
+            <div><dt>Phone</dt><dd data-placeholder>[Phone number: to be confirmed]</dd></div>
+            <div><dt>Hours</dt><dd data-placeholder>[Opening hours: to be confirmed]</dd></div>
+          </dl>
+
+          <div class="contact-actions">
+            <!-- PLACEHOLDER links: add verified map and phone URLs -->
+            <a class="btn btn-primary" href="#" data-placeholder-link="Add the verified Google Maps link here.">Get directions</a>
+            <a class="btn btn-ghost" href="#" data-placeholder-link="Add the verified phone link (tel:) here.">Call us</a>
+          </div>
+        </div>
+
+        <div class="map-slot" role="region" aria-label="Map placeholder">
+          <p>Map goes here</p>
+          <p class="map-hint">Embed the verified location once the address is confirmed.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">HOUSE</span>
+        <span class="logo-sub">Coffee &amp; Desserts</span>
+      </div>
+      <nav class="footer-col" aria-label="Footer pages">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Footer contact and social">
+        <ul class="footer-links">
+          <li><a href="#contact">Contact</a></li>
+          <!-- PLACEHOLDER social links: replace href with verified profiles -->
+          <li><a href="#" data-placeholder-link="Add the verified Instagram link here.">Instagram</a></li>
+          <li><a href="#" data-placeholder-link="Add the verified Facebook link here.">Facebook</a></li>
+          <li><a href="#" data-placeholder-link="Add the verified WhatsApp link (https://wa.me/NUMBER) here.">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-legal container">&copy; <span id="year">2026</span> HOUSE Coffee &amp; Desserts</p>
+  </footer>
+
+  <!-- PLACEHOLDER: replace href with https://wa.me/<verified number> -->
+  <a class="whatsapp-fab" href="#" aria-label="Chat on WhatsApp" data-placeholder-link="Add the verified WhatsApp link (https://wa.me/NUMBER) here.">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.18 1.6 6L4 29l8.14-1.56a12 12 0 0 0 3.9.65C22.68 28.1 28 22.7 28 16.06 28 9.4 22.68 3 16.04 3Zm0 22.1c-1.2 0-2.38-.3-3.42-.9l-.5-.3-4.83.93.96-4.7-.33-.52a10 10 0 0 1-1.54-5.3c0-5.55 4.5-10.06 10.06-10.06 5.55 0 10.06 4.5 10.06 10.05 0 5.55-4.52 10.8-10.46 10.8Zm5.52-7.5c-.3-.15-1.8-.9-2.08-1-.28-.1-.48-.15-.68.15-.2.3-.78 1-.96 1.2-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.8-1.68-2.1-.18-.3-.02-.46.13-.6.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.93-2.25-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.13 4.53.72.3 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.8-.73 2.05-1.45.25-.7.25-1.3.18-1.45-.08-.13-.28-.2-.58-.35Z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
